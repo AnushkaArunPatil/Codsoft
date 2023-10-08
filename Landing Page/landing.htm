@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Landing Page</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+<header>
+<nav>
+<div class="logo">
+The Story Shop
+</div>
+
+<div class="menu">
+ <a href="#">Home</a>
+<a href="#">Books</a>
+<a href="#">Categories</a>
+<a href="#">Authors</a>
+<a href="#">Info</a>
+</div>
+
+
+</nav>
+
+<div class="container">
+    <div class="left">
+        <div class="h-text">
+            <h2>Let`s read!!! </h2>
+            <h1>Books are your best friend</h1>
+            <p>With the help of The Story Shop you can enjoy unlimited range of books from different and populor authors </p>
+            <button>Browse Books</button>
+            
+        </div>
+    </div>
+    <div class="center">
+        <div>
+            <img src="logo.png">
+        </div>
+        
+        <div>
+            <img src="book_15.jpeg">
+        </div>
+        <div>
+            <img src="book_10.jpg">
+        </div>
+        <div>
+            <img src="book_21.jpg">
+        </div>
+        <div>
+            <img src="book_3.jpg">
+        </div>
+        
+    </div>
+    <div class="right">
+        <div class="card1">
+            <img src="book_3.jpg">
+            <p>“Everything’s a game, Avery Grambs. The only thing we get to decide in this life is if we play to win.”
+            </p>
+        </div>
+        <div class="card2">
+            <img src="book_21.jpg">
+            <p>“A dragon without its rider is a tragedy.
+                A rider without their dragon is dead.”
+            </p>
+        </div>
+    </div>
+
+</div>
+
+</header>
+
+
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+
+<script src="https://unpkg.com/tilt.js@1.2.1/dest/tilt.jquery.min.js"></script>
+
+<script>
+    $('.center').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows:false,
+  dots:true,
+  fade:true,
+  autoplay:true,
+  autoplaySpeed:2000,
+});
+</script>
+<script>
+    $('.card1').tilt({
+    scale: 1.2
+})
+$('.card2').tilt({
+    scale: 1.2
+})
+</script>
+
+
+</body>
+</html>
